@@ -58,7 +58,9 @@ function App() {
     <>
       <div>
         <input type="file" onChange={handleFileRead} accept=".txt" />
-        <button onClick={exportToExcel}>Export to Excel</button>
+        <button className="export-button" onClick={exportToExcel}>
+          Export to Excel
+        </button>
         <div>
           {joinData.map((data, index) => (
             <div key={index}>
